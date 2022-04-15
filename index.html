@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TadeuChurras</title>
+	<link rel="stylesheet" type="text/css" href="TadeuChurras.css">
+	<script src="TadeuChurras.js" type="text/javascript"></script>
+</head>
+<body>
+	<main>
+	<header>
+		
+		<nav id="menu_superior"> 	
+			<img src="Img/Img/TadeuRecortada 1.png">
+			<a href="#cardapio">Cardápios</a>
+			<a href="#">Quem somos</a>
+			<a href="#orcamentos">Faça seu orçamento</a>
+			<a class="ctt" href="#contatos">Contatos</a>
+
+		</nav>
+		</header>
+		<div id="menu_suspenso">
+		<img src="Img/Img/menu-button-of-three-horizontal-lines.png" onclick="fecharExibir()">
+		</div>
+		<div class="img_home">
+				<img src="Img/Img/carnehome.png">
+				<div class="texto"><h2>O Verdadeiro Gostinho do Churrasco</h2></div>
+		</div>
+		<div id="selos">
+			<div class="divhome1"><img src="Img/Img/equipes.jpg"><h1>Equipe Altamente <br> Qualificada. </h1></div>
+			<img class="img_confirma1" src="Img/Img/confirma.png">
+			<div class="divhome2"> <img src="Img/Img/qualidade.jpg"><h1>Qualidade completamente <br> garantida.</h1></div>
+			<img class="img_confirma2" src="Img/Img/confirma.png">
+			<div class="divhome3"><img src="Img/Img/estruturas.jpg"><h1>Estruturas e<br>variedades completas.</h1></div>
+			<img class="img_confirma3" src="Img/Img/confirma.png">
+			<div class="divhome4"><img src="Img/Img/carninha.jpg"><h1>O melhor gosto <br> na sua casa. </h1></div>
+			<img class="img_confirma4" src="Img/Img/confirma.png">
+		</div>
+		<a name="cardapio" id="cardapio">
+		<div class="palavracardapios"><h4>CARDÁPIOS:</h4></div></a>
+		<div id="cardapios">
+			<div class="opcoes1">
+				<img class="Elipse"src="Img/Img/Ellipse.png">
+				<h2>CARDÁPIO TRADICIONAL:</h2>
+				<img class="img1" src="Img/Img/cardapio 1.jpg" onclick ="show_cardapio1()">
+					<div id="dadoscardapio1">
+						<div class="camada_fechar"><a onclick="fechar()" >X</a></div>
+						<img class="Elipsedados" src="Img/Img/Ellipse.png">
+						<h3 id="dados1">CARDÁPIO TRADICIONAL:</h3>
+						<img class="img1_showhide" src="Img/Img/cardapio 1.jpg">
+						<p class="p1">
+							<span class="bold">ENTRADAS:</span><br> 
+							Pães com<br> frios e  queijos temperados.<br>
+							<br>
+							<span class="bold">BEBIDAS:</span><br>
+							Por conta do cliente.<br>
+							<br>
+							<span class="bold">EQUIPE:</span><br>
+							1 Churrasqueiro.<br>
+							1 Auxiliar.<br>
+							<br>         
+							<span class="bold">CARNES (em peças):</span><br>
+							Peças de Picanha.<br>
+							Linguiça.<br>
+							Contra-Filé.<br>
+							Tulipa de frango.<br>
+							Pães de alho.<br>
+							Queijo qualho.<br>
+							<br>
+							<span class="bold">Equipamentos para preparo:</span><br>
+							 Carvão.<br>
+							 Lenha de jaboticabeira.<br></p>
+
+							 <p class="p2">
+							 	<span class="bold">SALADAS:</span><br>
+								Palmito original.<br>
+								Alface(Crespa, Agrião,<br> Alface roxo).<br>
+								Tomate padrão e seco.<br>
+								Ovo de codorna.<br>
+								Champignon na mostarda.<br>
+								Cenoura ralada.<br>
+								Beterraba ralada.<br>
+								<br>
+								<span class="bold">TEMPEROS:</span><br>
+								Azeite.<br>
+								Sal.<br>
+								Limão.<br>
+								Molho de mostarda.<br>
+								<br>
+								<span class="bold">Frutas para mesa:</span><br>
+								Manga. <br>
+								Melão.<br>
+								Morango.<br>
+								Maçã.<br>
+								Pera.<br></p>
+
+								<p class="p3">
+								<span class="bold">ACOMPANHAMENTOS:</span><br>
+								Maionese.<br>
+								Farofa.<br>
+								Vinagrete.<br>
+								Arroz branco.<br>
+								<br>
+								<span class="bold">SOBREMESA:</span><br>
+								Abacaxi na brasa com<br>sorvete. 
+								<br>
+								<span class="bold">TALHERES E PRATOS:</span><br>
+								Pratos porcelana.<br>
+								Faca de inox.<br>
+								Garfo de inox.<br>
+								Copos de vidro.<br>
+								<br>
+
+								<span class="bold">OBS: Os alimentos ja vão<br>pré preparados, mas são<br>finalizados no dia.</span> </p>
+					</div>
+			</div>
+
+			<section class="opcoes1completo">
+				<img class="Elipse" src="Img/Img/Ellipse.png">
+				<h2>CARDÁPIO COMPLETO:</h2>
+				<img class="img2" src="img/Img/tagliatadiv2.png" onclick ="show_cardapio2()">
+				<div id="dadoscardapio2">
+					<div class="camada_fechar"><a onclick="fechar()" >X</a></div>
+						<img class="Elipsedados" src="Img/Img/Ellipse.png">
+						<h3 id="dados2">CARDÁPIO COMPLETO:</h3>
+						<img class="img2_showhide" src="Img/Img/tagliatadiv2.png" >
+						<p class="p1-2">
+							<span class="bold">ENTRADAS:</span><br>
+							Lanche de pernil flambado<br> com queijo prato
+							e vinagrete.<br>
+							Pães com frios e queijos<br> temperados.<br>
+							<br>
+							<span class="bold">BEBIDAS:</span><br>
+							Vodka.<br>
+							Velho Barreiro.<br>
+							Saquê.<br>
+							Gim.<br>
+							Água tônica.<br>
+							51.<br>
+							Água com gás.<br>
+							Refrigeirantes.<br>
+							Água sem gás.<br>
+							<br>
+							<span class="bold">FRUTAS PARA DRINKS:</span><br>
+							Pitaya.<br>
+							Limão Siciliano e verde.<br>
+							Morango.<br>
+							Laranja.<br>
+							Uva.<br>
+							Maracujá.<br>
+							Melancia.<br>
+							<br>
+							</p>
+							<p class="p2-2">
+							<span class="bold">FRUTAS PARA A MESA:</span><br>
+							Morango.<br>
+							Maçã.<br>
+							Pera.<br>
+							Manga.<br>
+							Melão.<br>
+							<br>
+							<span class="bold">CARNES(em peças):</span><br>
+							Tagliata Italiana<br>
+							Linguiça perdigão na brasa.<br>
+							Salsichão.<br>
+							Fraldinha.<br>
+							Bife Ancho.<br>
+							Picanha suína .<br>
+							Tulipa de frango.<br>
+							Sobre-coxa de Frango.<br>
+							Pães de alho.<br>
+							Queijo qualho.<br>
+							<br>
+							<span class="bold">EQUIPAMENTOS DE PREPARO:</span><br>
+							Carvão.<br>
+							Lenha de jaboticabeira.<br>
+							<br>
+							<span class="bold">TEMPEROS:</span><br>
+							Azeite.<br>
+							Sal.<br>
+							Limão.<br>
+							Molho de mostarda.<br> </p>
+						<p class="p3-2">
+							<span class="bold">SALADAS:</span><br>
+							Palmito original.<br>
+							champion no molho<br> de mostarda.<br>
+							Ovos de codorna.<br>
+							Cenoura ralada.<br>
+							Beterraba ralada.<br>
+							Pepino fatiado.<br>
+							Alface (crespo, americano<br> roxo, agrião).<br>
+							Tomate padrão e seco.<br>
+							<br>
+							<span class="bold">EQUIPE:</span><br>
+							Churrasqueiro <br>      
+							Garçon.<br>
+							Copeira.<br>
+							Cozinheira.<br>
+							Bartender.<br><br>
+							<span class="bold">ACOMPANHAMENTOS:</span><br>
+							Farofa.<br>				
+							Maionese.<br>
+							Vinagrete.<br>
+							Arroz branco.<br>
+							Abobrinha na brasa.<br>
+							<br>	</p>
+
+						<p class="p4">
+							<span class="bold">CORTESIA:</span><br>
+							3 Rechaud de inox para<br> carnes, frangos, arroz<br>
+							e linguiças.<br>
+							<br>
+							<span class="bold">TALHERES E PRATOS:</span><br>
+							Pratos porcelana.<br>
+							Copos paulistinha.<br>
+							Garfos de inox.<br>
+							Facas de inox.<br>
+							<br>
+							<span class="bold">OBS: Os alimentos ja vão<br>pré preparados, mas são<br>finalizados no dia.</span>	
+						</p>
+				</div>
+			</div>
+		</section>
+		<div id="cardapios2">
+			<section class="opcoes2">
+				<img class="Elipse" src="Img/Img/Ellipse.png">
+				<h2>CARDÁPIO VEGETARIANO:</h2>
+				<img class="img3" src="Img/Img/vegetariano.jpg" onclick="show_cardapio3()">
+				<div id="dadoscardapio3">
+					<div class="camada_fechar"><a onclick="fechar()" >X</a></div>
+						<img class="Elipsedados" src="Img/Img/Ellipse.png">
+						<h3 id="dados3">CARDÁPIO VEGETARIANO:</h3>
+						<img class="img2_showhide" src="Img/Img/vegetariano.jpg">
+						<p class="p1-3">
+							<span class="bold">ENTRADAS:</span><br>
+							Grão secos refinados.<br>
+							Pães com frios e queijos temperados.<br>
+							<br>
+							<span class="bold">BEBIDAS:</span><br>
+							Por conta do cliente.<br>
+							<br>
+							<span class="bold">EQUIPE:</span><br>
+							Churrasqueiro.<br>
+							Garçon.<br>
+							Copeira.<br>
+							Cozinheira.<br>
+							<br>
+							<span class="bold">ASSADOS:</span><br>
+							Shimeji.<br>
+							Abobrinha.<br>
+							Beringela.<br>
+							Tomates rechedos.<br>
+							Couve-manteiga.<br>
+							<br>
+							<span class="bold">EQUIPAMENTOS DE PREPARO:</span><br>
+							Carvão.<br>
+							Lenha de jaboticabeira.<br> </p>
+
+							<p class="p2-3">
+								<span class="bold">SALADAS:</span><br>
+								Champion no molho de mostarda.<br>
+								Palmito original.
+								Alface (crespo,<br> agrião, alface roxo)<br>
+								Tomate padrão e seco.<br>
+								Ovo de codorna.<br>
+								Cenoura ralada.<br>
+								Beterraba ralada.<br>
+								Manga fatiada.<br>
+								<br>
+								<span class="bold">TEMPEROS:</span><br>
+								Azeite.<br>
+								Sal.<br>
+								Limão.<br>
+								Molho de mostarda.<br>
+								<br>
+								<span class="bold">FRUTAS PARA A MESA:</span><br>
+								Manga. <br>
+								Melão.<br>
+								Morango.<br>
+								Maçã.<br>
+								Pera.<br>
+								<br>
+                               <span class="bold">OBS: Os alimentos ja vão<br>pré preparados, mas são<br>finalizados no dia.</span></p>
+
+								<p class="p3-3">
+									<span class="bold">ACOMPANHAMENTOS:</span><br>
+									Maionese.<br>
+									Pimentão verde, <br>amarelo e vermelho.<br>
+									Milho.<br>
+									Azeitona.<br>
+									Salcinha.<br>
+									Ovos.<br>
+									Maçã verde.<br>
+									Limão.<br>
+									<br>
+									<span class="bold">FAROFA:</span><br>
+									Ricóta defumada.<br>
+									Castanha.<br>
+									Mix de farinhas.<br>
+									Arroz branco parboliza<br>do<br>
+									<br>
+									<span class="bold">SOBREMESA:</span><br>
+									Abacaxi na brasa<br> com sorvete de creme.<br>
+									<br>
+									<span class="bold">TALHERES E PRATOS:</span><br>
+									Pratos de porcelana.<br>
+									Copos paulistinha.<br>
+									Garfos de inox.<br>
+									Facas de inox.<br></p>
+				</div>
+			</section>
+			<div class="opcoes2ilus">
+				<img class="Elipse" src="Img/Img/Ellipse.png">
+				<h2>CARDÁPIO ILUSTRATIVO:<h2>
+			<img class="img4" src="Img/Img/tagliata.jpg">
+			</div>
+		</div>
+		<a name="orcamentos" id="orcamentos">
+		<div class="palavraorcamentos">FAÇA SEU ORÇAMENTO:</div></a>
+		<section class="orcamentos">
+			<h1>ORÇAMENTOS</h1>
+			<form>
+			<p class="orcamentonome">Digite seu nome:</p>
+			<input type="text" name="nome">
+			<p class="orcamentoemail">Digite seu e-mail:</p>
+			<input type="text" name="email">
+			<p class="orcamentotelefone">Digite seu telefone:</p>
+			<input type="tel" name="telefone">
+			<p class="orcamentopessoas">Digite o número de pessoas:</p>
+			<input type="text" name="local do evento">
+			<p class="orcamentocomentario">Quer comentar alguma coisa?</p>
+			<textarea id="coment" cols="20" rows="1%"></textarea>
+			<input id="button" type="button" value="Enviar"></input>
+			</form>
+		</section> 
+
+		<footer>
+			<a name="contatos" id="contatos">
+			<h3>Contatos:</h3></a>
+			<img class="telefone" src="Img/Img/telefoneTadeu.png">
+			<p class="footp">(11) 96618-6883</p>
+			<img class="footimg2" src="Img/Img/envelopetadeu.png">
+			<p class="p2">loren.ipsum@gmail.com </p>
+			<a href="#cardapio"><h2 class="h2-1">Cardápios</h2></a>
+			<a href="#"><h2 class="h2-2">Quem somos</h2></a>
+			<a href="#orcamento" class="h2-3"><h2>Faça seu orçamento</h2></a>
+			<a href="#"><img class="footimg3" src="Img/Img/wpptadeu.png"></a>
+			<a href="#"><img class="footimg4" src="Img/Img/facebook.png"></a>
+			<a href="#"><img class="footimg5" src="Img/Img/instagram.png"></a>
+			<img class="TadeuFooter" src="Img/Img/TadeuRecortada 2.png">
+		</footer>
+
+	</main>
+
+</body>
+</html>
