@@ -899,6 +899,10 @@ footer img{
 		margin-bottom: 10px;
 	}
 
+	.palavraorcamentos{
+		font-size: 30px;
+	}
+
 	.img_home{
 	position: relative;
 	padding-top: -120px;
@@ -1154,7 +1158,6 @@ footer img{
 	
 	.palavracardapios h4{
 	margin-left:6%;
-	font-size: 30px;
 	}
 	
 	.orcamentos h1{
