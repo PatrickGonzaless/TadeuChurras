@@ -848,7 +848,7 @@ footer img{
 }
 
 ::-webkit-scrollbar {
-    width:8px;
+    width:12px;
 }
 
 ::-webkit-scrollbar-track {
@@ -856,12 +856,12 @@ footer img{
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #624191;
+    background-color: #786653;
     border-radius:10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #887767;
+    background-color: #46392C;
 }
 
 @media only screen and (max-width: 576px){
