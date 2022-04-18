@@ -793,7 +793,7 @@ footer img{
 
 .footimg3{
 	position: relative;
-	width: 3%;
+	width: 2.7%;
 	height: 40px;
 	float: right;
 	margin-right: 2%;
@@ -803,10 +803,10 @@ footer img{
 
 .footimg4{
 	position: relative;
-	width: 3%;
+	width: 2.7%;
 	height: 40px;
 	margin-right: 2%;
-	margin-top: -40px;
+	margin-top: -38px;
 	display: block;
 	float: right;
 	margin-top: 30px;
@@ -814,16 +814,16 @@ footer img{
 
 .footimg5{
 	position: relative;
-	width: 3%;
+	width: 2.7%;
 	height: 40px;
-	margin-right: -5%;
+	margin-right: -4.7%;
 	margin-top: -40px;
 	float: right;
 	margin-top: 90px;
 }
 
 .TadeuFooter{
-	width:160px;
+	width:200px;
 	height:120px;
 	margin-left:29%;
 }
@@ -848,7 +848,7 @@ footer img{
 }
 
 ::-webkit-scrollbar {
-    width:12px;
+    width:15px;
 }
 
 ::-webkit-scrollbar-track {
