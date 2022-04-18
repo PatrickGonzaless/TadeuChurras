@@ -350,6 +350,10 @@ header img{
 	margin-bottom: -70px;
 }
 
+.opcoes1 h2{
+	padding-top: 10px;
+}
+
 #dados1{
 	font-size: 25px;
 	position: relative;
@@ -379,6 +383,10 @@ header img{
 	float: left;
 	border: 15px solid #8D8D8D;
 	margin-bottom: -70px;
+}
+
+.opcoes1completo h2{
+	padding-top: 10px;
 }
 
 .opcoes2{
@@ -666,7 +674,7 @@ header img{
 	border-radius:5px;
 }
 
-#button{
+button{
 	display: block;
 	position: relative;
 	margin-top: 40px;
@@ -681,11 +689,10 @@ header img{
 	padding-bottom: 15px;
 	border-radius: 4px;
 	cursor: pointer;
-	
 
 }
 
-#button:hover{
+button:hover{
 	background-color: white;
 	color: #635950;
 	transition: 1.5s all;
@@ -1154,7 +1161,7 @@ footer img{
 		width:100%;
 	}
 	
-	#button{
+	button{
 		width:60%;
 		margin-left:19.5%;
 		font-size:30px;
@@ -1524,7 +1531,7 @@ footer img{
 			width:100%;
 		}
 		
-		#button{
+		button{
 			width:60%;
 			margin-left:19.5%;
 			font-size:30px;
