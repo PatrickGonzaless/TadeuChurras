@@ -1,357 +1,1607 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>TadeuChurras</title>
-	<link rel="stylesheet" type="text/css" href="TadeuChurras.css">
-	<script src="TadeuChurras.js" type="text/javascript"></script>
-</head>
-<body>
-	<main>
-	<header>
+
+@font-face {
+    font-family: LektonRegular;
+    src: url(Fontes/Fontes/Lekton-Regular.ttf);
+}
+
+@font-face {
+    font-family: LektonItalic;
+    src: url(Fontes/Fontes/Lekton-Italic.ttf);
+}
+
+@font-face {
+    font-family: LektonBold;
+    src: url(Fontes/Fontes/Lekton-Bold.ttf);
+}
+
+@font-face{
+	font-family: HeptaSemiBold;
+	src: url(Fontes/Fontes/HeptaSlab-SemiBold.ttf);
+}
+
+@font-face{
+	font-family: MaliBold;
+	src: url(Fontes/Fontes/Mali-Bold.ttf);
+}
+
+@font-face{
+	font-family: MaliRegular;
+	src : url(Fontes/Fontes/Mali-Regular.ttf)
+}
+
+@font-face{
+	font-family: LatoBold;
+	src:  url(Fontes/Fontes/Lato-Bold.ttf);
+}
+
+@font-face{
+	font-family: Inter;
+	src: url(Fontes/Fontes/Inter-VariableFont_slnt,wght.ttf);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+	text-align: center;
+}
+
+main{
+	width: 100%;
+	position: relative;
+	height: auto;
+	margin: auto;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 90px;
+	background-image: url(Img/Img/madeiratadeu.jpg);
+	z-index: 5;
+}
+
+header img{
+ 	margin-top: 10px;
+ 	margin-left: -19%;
+ 	float: left;
+ 	filter: contrast(100%);
+}
+
+#menu_superior{
+	height: 40px;
+	width: 100%;
+	z-index: 5;
+	float: left;
+}
+
+#menu_superior a{
+	font-size: 20px;
+	position: relative;
+	float: right;
+	text-decoration: none;
+	margin-top: 30px;
+	margin-right: 5%;
+	width: 15%;
+	color: #FFF;
+	font-family: LektonRegular;
+	font-weight: 700;
+	padding-bottom: 6px;
+
+}
+
+#menu_superior img{
+	margin-left: 5%;
+}
+
+#menu_superior a:hover{
+	background-color: white;
+	color: #887767;
+	transition: 1s all;
+}
+
+.img_home{
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.img_home img{
+	position: relative;
+	width: 100%;
+	height: 400px;
+}
+
+.texto{
+	position: relative;
+	margin-top: -65px;
+	margin-left: 3%;
+	color: white;
+	text-align: left;
+	font-family: HeptaSemiBold;
+	font-size: 30px;
+}
+
+
+#selos{
+	width: 100%;
+	height: 370px;
+	background-color: #887767;
+	position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.divhome1{
+	width: 20%;
+	position: relative;
+	background-color: #63564b;
+	height: 120px;
+	float: left;
+	margin-top: 90px;
+}
+
+.divhome1 img{
+	width: 100%;
+	height: 150px;
+}
+
+.divhome2{
+	width: 20%;
+	position: relative;
+	background-color: #63564b;
+	height: 120px;
+	float: left;
+	margin-top: 90px;
+}
+
+.divhome2 img{
+	width: 100%;
+	height: 150px;
+}
+
+.divhome3{
+	width: 20%;
+	position: relative;
+	background-color: #CCC;
+	height: 120px;
+	float: left;
+	margin-top: 90px;
+}
+
+.divhome3 img{
+	width: 100%;
+	height: 150px;
+}
+
+.divhome4{
+	width: 20%;
+	position: relative;
+	background-color: #CCC;
+	height: 120px;
+	float: left;
+	margin-top: 90px;
+	margin-left: 1.5%;
+}
+
+.divhome4 img{
+	width: 100%;
+	height: 150px;
+}
+
+.steakdiv{
+	width: 100%;
+	height: auto;
+}
+
+#selos h1{
+	clear: left;
+	margin-top: 20px;
+	color: white;
+	font-family: LektonBold;
+	font-size: 20px;
+}
+
+.img_confirma1{
+	position: absolute;
+	height: 44px;
+	top: 220px;
+	bottom: 136px;
+	left: 21.5%;
+	clear: left;
+}
+
+.img_confirma2{
+	position: absolute;
+	height: 44px;
+	top: 220px;
+	bottom: 136px;
+	left: 46.1%;
+	clear: left;
+}
+
+.img_confirma3{
+	position: absolute;
+	height: 44px;
+	bottom: 136px;
+	top: 220px;
+	left: 70.7%;
+	clear: left;
+}
+
+.img_confirma4{
+	position: absolute;
+	height: 44px;
+	bottom: 136px;
+	top: 220px;
+	left: 96.8%;
+	clear: left;
+}
+
+.palavracardapios{
+	position: relative;
+	width: 100%;
+	background-image: url(Img/Img/prancha.jpg);
+	color: white;
+	font-family: LektonBold;
+	font-size: 40px;
+}
+
+#cardapios{
+	position: relative;
+	width: 100%;
+	background-color: #887767;
+	height: 600px;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+#cardapios h2{
+	font-family: MaliBold;
+	margin-top: 5px;
+	text-align: left;
+	margin-left: 8%;
+}
+
+.Elipse{
+	position: relative;
+	padding-top: 15px;
+	margin-left: 2%;
+	float: left;
+}
+
+.Elipsedados{
+	position: relative;
+	padding-top: 15px;
+	margin-left: 2%;
+	float: left;
+}
+
+.img1{
+	text-align: center;
+	margin-top: 45px;
+	width: 70%;
+	height: 310px;
+	cursor: pointer;
+	margin-right:9%;
+}
+
+.img2{
+	text-align: center;
+	margin-top: 45px;
+	width: 70%;
+	height: 310px;
+	cursor: pointer;
+	margin-left: -7%;
+}
+
+#cardapios2{
+	margin-top: -50px;
+	position: relative;
+	width: 100%;
+	background-color: #887767;
+	height: auto;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+#cardapios2 h2{
+	font-family: MaliBold;
+	margin-top: 15px;
+	text-align: left;
+	margin-left: 8%;
+}
+
+.img3{
+	text-align: center;
+	margin-top: 45px;
+	width: 70%;
+	height: 310px;
+	cursor: pointer;
+}
+
+.img4{
+	text-align: center;
+	margin-top: 45px;
+	margin-left: 12%;
+	width: 70%;
+	height: 310px;
+	cursor: pointer;
+}
+
+.opcoes1{
+	width: 43%;
+	height: 500px;
+	background-color: #FFF;
+	float: left;
+	border: 15px solid #8D8D8D;
+	margin-bottom: -70px;
+}
+
+.opcoes1 h2{
+	padding-top: 10px;
+}
+
+#dados1{
+	font-size: 25px;
+	position: relative;
+	font-family: MaliBold;
+	margin-top: 15px;
+}
+
+#dados2{
+	font-size: 25px;
+	position: relative;
+	font-family: MaliBold;
+	margin-top: 15px;
+}
+
+#dados3{
+	font-size: 25px;
+	position: relative;
+	font-family: MaliBold;
+	margin-top: 15px;
+	margin-left: 5%;
+}
+
+.opcoes1completo{
+	width: 43%;
+	height: 500px;
+	background-color: #FFF;
+	float: left;
+	border: 15px solid #8D8D8D;
+	margin-bottom: -70px;
+}
+
+.opcoes1completo h2{
+	padding-top: 10px;
+}
+
+.opcoes2{
+	padding-top: -100px;
+	width: 43%;
+	height: 500px;
+	background-color: #FFF;
+	float: left;
+	border: 15px solid #8D8D8D;
+}
+
+.opcoes2ilus{
+	padding-top: -100px;
+	width: 43%;
+	height: 500px;
+	background-color: #FFF;
+	float: left;
+	border: 15px solid #8D8D8D;
+}
+
+.opcoes2vege{
+	padding-top: -100px;
+	width: 43%;
+	height: 500px;
+	background-color: #FFF;
+	float: left;
+	border: 15px solid #8D8D8D;
+}
+
+#dadoscardapio1{
+	position: relative;
+	margin-top: -180px;
+	background-color: white;
+	width: 200%;
+	height: 650px;
+	margin-left: 7%;
+	z-index: 10;
+	border: 15px solid #8D8D8D;
+	visibility: hidden ;
+	
+}
+
+
+#dadoscardapio2{
+	position: relative;
+	margin-top: -180px;
+	background-color: white;
+	width: 200%;
+	height: 700px;
+	margin-left: 7%;
+	z-index: 10;
+	border: 15px solid #8D8D8D;
+	float: right;
+	margin-right: 4.7%;
+	visibility: hidden;
+}
+
+
+#dadoscardapio3{
+	position: relative;
+	margin-top: -180px;
+	background-color: white;
+	width: 200%;
+	height: 700px;
+	margin-left: 7%;
+	z-index: 9;
+	border: 15px solid #8D8D8D;
+	float: left;
+	margin-right: 4.7%;
+	margin-top: -812.5px;
+	visibility: hidden;
+}
+
+.p1{
+	position: relative;
+	float: left;
+	text-align: left;
+	margin-left: 3%;
+	margin-top: 30px;
+	font-family: MaliRegular;
+}
+
+.p1-2{
+	position: relative;
+	float: left;
+	text-align: left;
+	margin-left: 1.5%;
+	margin-top: 30px;
+	font-family: MaliRegular;
+}
+
+.p1-3{
+	position: relative;
+	float: left;
+	text-align: left;
+	margin-left: 3%;
+	margin-top: 30px;
+	font-family: MaliRegular;
+}
+
+.p2{
+	margin-top: 30px;
+	float: left;
+	font-family: MaliRegular;
+	margin-left: 4%;
+	text-align: left;
+}
+
+.p2-2{
+	margin-top: 30px;
+	float: left;
+	font-family: MaliRegular;
+	margin-left: 1.5%;
+	text-align: left;
+}
+
+.p2-3{
+	margin-top: 30px;
+	float: left;
+	font-family: MaliRegular;
+	margin-left: 0.5%;
+	text-align: left;
+}
+
+.p3{
+	margin-top: 30px;
+	float: left;
+	font-family: MaliRegular;
+	margin-left: 3%;
+	text-align: left;
+}
+
+.p3-2{
+	margin-top: 30px;
+	float: left;
+	font-family: MaliRegular;
+	margin-left: 1%;
+	text-align: left;
+}
+
+.p3-3{
+	margin-top: 30px;
+	float: left;
+	font-family: MaliRegular;
+	margin-left: 5%;
+	text-align: left;
+}
+
+.p4{
+	position: relative;
+	margin-top:100px;
+	font-family: MaliRegular;
+}
+
+.img1_showhide{
+	position: relative;
+	width: 25%;
+	margin-top: 30px;
+	float: left;
+	margin-left: 5%;
+}
+
+.img2_showhide{
+	position: relative;
+	width: 25%;
+	margin-top: 30px;
+	float: left;
+	margin-left: 3%;
+}
+
+.bold{
+	font-family: MaliBold;
+}
+
+.camada_fechar a{
+	position: relative;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	font-family: MaliBold;
+	margin-left: 97%;
+	margin-top: 3px;
+	cursor: pointer;
+}
+
+.palavraorcamentos{
+	position: relative;
+	width: 100%;
+	background-image: url(Img/Img/prancha.jpg);
+	color: white;
+	font-family: LektonBold;
+	font-size: 40px;
+	clear:both;
+	margin-right: 30%;
+}
+
+.orcamentos{
+	height: 1100px;
+	width: 100%;
+	padding-top: 40px;
+	background-color: #887767;
+}
+
+.orcamentos h1{
+	width: 25%;
+	position: relative;
+	font-family: LektonBold;
+	font-size: 40px;
+	color: white;
+	background-color: #46392C;
+	padding: 0.5%;
+	border-radius: 4px;
+	margin: auto;
+}
+
+.orcamentos input{
+	position: relative;
+	display: block;
+	clear: both;
+	height: 80px;
+	margin: auto;
+	margin-top: 80px;
+	width: 70%;
+	background-color: #D0C5BA;
+	border-radius: 4px;
+	font-size: 18px;
+}
+
+.orcamentonome{
+	color: white;
+	font-family: LatoBold;
+	float: left;
+	margin-left: 15%;
+	margin-top: 55px;
+	font-size: 18px;
+}
+
+.orcamentoemail{
+	color: white;
+	font-family: LatoBold;
+	float: left;
+	margin-left: 15%;
+	margin-top: 55px;
+	font-size: 18px;
+}
+
+.orcamentotelefone{
+	color: white;
+	font-family: LatoBold;
+	float: left;
+	margin-left: 15%;
+	margin-top: 55px;
+	font-size: 18px;
+}
+
+.orcamentopessoas{
+	color: white;
+	font-family: LatoBold;
+	float: left;
+	margin-left: 15%;
+	margin-top: 55px;
+	font-size: 18px;
+}
+
+.orcamentocomentario{
+	color: white;
+	font-family: LatoBold;
+	float: left;
+	margin-left: 15%;
+	margin-top: 55px;
+	margin-bottom:5px;
+	font-size: 18px;
+}
+
+#coment{
+	display:block;
+	position: relative;	
+	height: 100px;
+	width: 70%;
+	background-color: #D0C5BA;
+	font-size: 18px;
+	clear: both;
+	text-align: left;
+	margin-left:15%;
+	border-radius:5px;
+}
+
+button{
+	display: block;
+	position: relative;
+	margin-top: 40px;
+	margin-left: 40%;
+	font-size: 35px;
+	clear:both;
+	width: 20%;
+	background-color: #635950;
+	color: white;
+	font-family: LatoBold;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-radius: 4px;
+	cursor: pointer;
+
+}
+
+button:hover{
+	background-color: white;
+	color: #635950;
+	transition: 1.5s all;
+}
+
+footer{
+	position: relative;
+	width: 100%;
+	height: 290px;
+	background-color: #46392C;
+}
+
+footer h3{
+	font-family: LektonBold;
+	color: white;
+	opacity: 0.3;
+	font-size: 20px;
+	text-align: left;
+	margin-left: 5.9%;
+	padding-top: 20px;
+}
+
+.h2-1{
+	position: relative;
+	font-family: LektonBold;
+	opacity: normal;
+	color: white;
+	font-size: 20px;
+	margin-top: -90px;
+	text-align: center;
+	float: left;
+	margin-left: 17%;
+}
+
+.h2-2{
+	position: relative;
+	font-family: LektonBold;
+	opacity: normal;
+	color: white;
+	font-size: 20px;
+	margin-top: -88px;
+	text-align: center;
+	float: left;
+	margin-left: 31%;
+}
+
+.h2-3{
+	position: relative;
+	font-family: LektonBold;
+	opacity: normal;
+	color: white;
+	font-size: 20px;
+	margin-top: -88px;
+	text-align: center;
+	float: left;
+	margin-left: 44%;
+	color: white;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.footp{
+	position: relative;
+	font-size: 16px;
+	color: white;
+	text-align: left;
+	font-weight: 400;
+	margin-left: 5%;
+	margin-top: 30px;
+	font-family: Inter;
+	text-decoration: none;
+}
+
+footer .p2{
+	font-size: 16px;
+	color: white;
+	text-align: left;
+	font-weight: 400;
+	margin-left: 1%;
+	margin-top: 50px;
+	font-family: Inter;
+}
+
+footer img{
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin-top: 25px;
+	margin-left: 2%;
+}
+
+.footimg2{
+	width: 38px;
+	height: 30px;
+	margin-left: -2.5%;
+	padding-top: 19px;
+}
+
+.footimg3{
+	position: relative;
+	width: 2.7%;
+	height: 40px;
+	float: right;
+	margin-right: 2%;
+	margin-top: -40px;
+	display: block;
+}
+
+.footimg4{
+	position: relative;
+	width: 2.7%;
+	height: 40px;
+	margin-right: 2%;
+	margin-top: -38px;
+	display: block;
+	float: right;
+	margin-top: 30px;
+}
+
+.footimg5{
+	position: relative;
+	width: 2.7%;
+	height: 40px;
+	margin-right: -4.7%;
+	margin-top: -40px;
+	float: right;
+	margin-top: 90px;
+}
+
+.TadeuFooter{
+	width:200px;
+	height:120px;
+	margin-left:29%;
+}
+
+#menu_suspenso{
+	position: relative;
+	width: 4%;
+	height: 1.5%;
+	background-image: url(Img/Img/madeiratadeu.jpg);
+	z-index: 11;
+	top:10px;
+	left: 0.2%;
+	border: 3px solid black;
+	border-radius: 5px;
+	cursor: pointer;
+	display: none;
+}
+
+#menu_suspenso img{
+	margin-top: 2px;
+	width: 80%;
+}
+
+::-webkit-scrollbar {
+    width:15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #584D42;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #786653;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #46392C;
+}
+
+@media only screen and (max-width: 576px){
+
+	#menu_suspenso{
+		display: block;
+		width: 10%;
+		cursor: pointer;
+		margin-bottom: -50px;
+	}
+
+	#menu_superior a{
+		width:89%;
+		text-align: center;
+		margin-top: -5px;
+		margin-right: 5%;
+	}
+	
+	#menu_superior img{
+		margin-left:39%;
+	}
+	
+	#menu_superior{
+		width:100%;
+	}
+
+	header{
+		position: absolute;
+		height: 230px;
+		width:100%;
+	}
+
+	header img{
+		margin-left: 45%;
+		margin-bottom: 10px;
+	}
+
+	.img_home{
+	position: relative;
+	padding-top: -120px;
+	width: 100%;
+	height: 550px;
+	background-image: url(Img/Img/barbecue-1239434_640.jpg);
+	}
+
+	.img_home img{
+		display: none;
+	}
+
+	.texto{
+	padding-top: 370px;
+	font-size: 15px;
+	text-align: center;
+
+	}
+
+	#selos{
+	display:none;
+	}
+
+	#dadoscardapio1, #dadoscardapio2, #dadoscardapio3 {
+	visibility: hidden;
+	}
+
+	#dadoscardapio1{
+	width: 100%;
+	height: 1600px;
+	margin-top: -270px;
+	margin-left: -4%;
+	}
+
+	#dadoscardapio2{
+	position: relative;
+	width: 100%;
+	height: 2200px;
+	margin-top: -650px;
+	margin-right: -4%;
+	clear: both;
+	}
+
+	#dadoscardapio3{
+	position: relative;
+	width: 100%;
+	height: 1900px;
+	margin-top: -1050px;
+	margin-left: -4%;
+	}
+
+	.Elipse{
+		margin-top: -10px;
+	}
+
+	.img1_showhide{
+		position: relative;
+		width: 80%;
+		height: 180px;
+		margin-left: 10%;
+		margin-top: 20px;
+	}
+
+	.img2_showhide{
+		position: relative;
+		width: 80%;
+		height: 180px;
+		margin-left: 10%;
+		margin-top: 20px;
+	}
+
+	.p2{
+		position: relative;
+		margin-top: 10px;
+		margin-left: 3%;
+	}
+
+	.p2-2{
+		margin-top: 2px;
+		margin-bottom: 2px;
+	}
+
+	.p3-2{
+		margin-top: 2px;
+	}
+
+	.p2-3{
+		margin-left: 3%;
+	}
+
+	.p3{
+		position: relative;
+		display: block;
+	}
+
+	.p3-2{
+		margin-top: -1px;
+	}
+
+	
+	.p1-2{
+		position: relative;
+		margin-top: 10px;
+		display: block;
+	}
+
+	.p1-3{
+		margin-left: 2%;
+	}
+
+	.p4{
+		position: relative;
+		clear: left;
+		text-align: left;
+		margin-left: 2%;
+	}
+
+	.p3-3{
+		margin-left: 3%;
+	}
+
+	.camada_fechar{
+		position: absolute;
+		margin-right: 1%;
+		margin-top: 1px;
+		left: 90%;
+	}
+
+	.opcoes1, .opcoes2, .opcoes2vege, .opcoes1completo{
+	width: 80%;
+	margin: auto;
+	margin-bottom: 30px;
+	height:auto;
+	
+	}
+
+	.opcoes1{
+	margin-top: 15px;
+	height: 300px;
+	z-index: 2;
+	padding-bottom:-40px;
+	}
+
+	.opcoes1 h2{
+		padding-top: 10px;
+	}
+	
+
+	.opcoes1completo{
+	height:300px;
+	margin-bottom:40px;
+	padding-bottom:-20px;
+	margin-top:30px;
+	}
+
+	
+	.opcoes1completo h2{
+		font-size:20px;
+		padding-top:10px;
+	}
+
+	.opcoes2{
+	margin-top: -35px;
+	height: 300px;
+	margin-bottom: 50px;
+	padding-bottom:20px;
+	}
+	
+	.opcoes2 {
+		font-size:15px;
+		height:280px;
+	}
+
+	.opcoes2vege{
+	position: relative;
+	margin-top: 50px;
+	height: 330px;
+	padding-bottom:20px;
+	}
+	
+	.opcoes2vege h2{
+		font-size:15px;
+	}
+
+	.opcoes2ilus{
+	margin-top:-20px;
+	height:auto;
+	padding-bottom:10px;
+	height:350px;
+	margin:auto;
+	width:80%;
+	}
+	
+	.opcoes2ilus h2{
+		font-size:20px;
+	}
+
+	.img1{
+	height: 180px;
+	margin-left:12%;
+	padding-bottom:-20px;
+	margin-top:30px;
+	}
+
+	.img2{
+	height: 180px;
+	margin-right:-6%;
+	margin-top:20px;
+	}
+
+	.img3{
+	margin-top: 30px;
+	height: 180px;
+	}
+
+	.img4{
+	margin-top:2px;
+	height: 180px;
+	margin-bottom: 10px;
+	width:85%;
+	margin-left:3.4%;
+	}
+
+	#cardapios, #cardapios2{
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+
+	}
+
+	#cardapios{
+		height:auto;
+	}
+	
+
+	#cardapios2{
+	margin-top:0px;
+	height: 620px;
+	margin:auto;
+	width:100%;
+	
+	}
+
+	.palavracardapios{
+		margin-top: -100px;	
+		margin-bottom: -50px;
+		width: 100%;
+	}
+
+	.Elipsedados{
+		display: none;
+	}
+	
+	.palavracardapios h4{
+	margin-left:6%;
+	}
+	
+	.orcamentos h1{
+	width:80%;
+	margin-left:10%;
+	font-size:30px;
+	}
+
+	main{
+		position:relative;
+		margin: auto;
+		width:100%;
+	}
+	
+	html{
+		width:100%;
+	}
+	
+	body{
+		width:100%;
+	}
+	
+	button{
+		width:60%;
+		margin-left:19.5%;
+		font-size:30px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	
+	.h2-1, .h2-2, .h2-3{
+		display: none;
+	}
+	
+	footer h3{
+		margin-left:42%;
+	}
+	
+	.footimg2{
+		margin-left:-7%;
+	}
+	
+	.footp{
+		margin-left:38%;
+	}
+	
+	.telefone{
+		margin-left:30%;
+	}
+	
+	.footimg3{
+		clear:right;
+		position:relative;
+		width:10%;
+		margin-top:10%;
+		margin-right:61%;
+	}
+	
+	.footimg4{
+		clear:right;
+		position:relative;
+		margin-right:40%;
+		margin-top:-8%;
+		width:10%;
+	}
+	
+	.footimg5{
+		width:10%;
+		margin-right:20%;
+		clear:right;
+		margin-top:-37px;
+	}
+
+	.TadeuFooter{
+		display: none;
+	}
 		
-		<nav id="menu_superior"> 	
-			<img src="Img/Img/TadeuRecortada 1.png">
-			<a href="#cardapio">Cardápios</a>
-			<a href="#">Quem somos</a>
-			<a href="#orcamentos">Faça seu orçamento</a>
-			<a class="ctt" href="#contatos">Contatos</a>
+}
 
-		</nav>
-		</header>
-		<div id="menu_suspenso">
-		<img src="Img/Img/menu-button-of-three-horizontal-lines.png" onclick="fecharExibir()">
-		</div>
-		<div class="img_home">
-				<img src="Img/Img/carnehome.png">
-				<div class="texto"><h2>O Verdadeiro Gostinho do Churrasco</h2></div>
-		</div>
-		<div id="selos">
-			<div class="divhome1"><img src="Img/Img/equipes.jpg"><h1>Equipe Altamente <br> Qualificada. </h1></div>
-			<img class="img_confirma1" src="Img/Img/confirma.png">
-			<div class="divhome2"> <img src="Img/Img/qualidade.jpg"><h1>Qualidade completamente <br> garantida.</h1></div>
-			<img class="img_confirma2" src="Img/Img/confirma.png">
-			<div class="divhome3"><img src="Img/Img/estruturas.jpg"><h1>Estruturas e<br>variedades completas.</h1></div>
-			<img class="img_confirma3" src="Img/Img/confirma.png">
-			<div class="divhome4"><img src="Img/Img/carninha.jpg"><h1>O melhor gosto <br> na sua casa. </h1></div>
-			<img class="img_confirma4" src="Img/Img/confirma.png">
-		</div>
-		<a name="cardapio" id="cardapio">
-		<div class="palavracardapios"><h4>CARDÁPIOS:</h4></div></a>
-		<div id="cardapios">
-			<div class="opcoes1">
-				<img class="Elipse"src="Img/Img/Ellipse.png">
-				<h2>CARDÁPIO TRADICIONAL:</h2>
-				<img class="img1" src="Img/Img/cardapio 1.jpg" onclick ="show_cardapio1()">
-					<div id="dadoscardapio1">
-						<div class="camada_fechar"><a onclick="fechar()" >X</a></div>
-						<img class="Elipsedados" src="Img/Img/Ellipse.png">
-						<h3 id="dados1">CARDÁPIO TRADICIONAL:</h3>
-						<img class="img1_showhide" src="Img/Img/cardapio 1.jpg">
-						<p class="p1">
-							<span class="bold">ENTRADAS:</span><br> 
-							Pães com<br> frios e  queijos temperados.<br>
-							<br>
-							<span class="bold">BEBIDAS:</span><br>
-							Por conta do cliente.<br>
-							<br>
-							<span class="bold">EQUIPE:</span><br>
-							1 Churrasqueiro.<br>
-							1 Auxiliar.<br>
-							<br>         
-							<span class="bold">CARNES (em peças):</span><br>
-							Peças de Picanha.<br>
-							Linguiça.<br>
-							Contra-Filé.<br>
-							Tulipa de frango.<br>
-							Pães de alho.<br>
-							Queijo qualho.<br>
-							<br>
-							<span class="bold">Equipamentos para preparo:</span><br>
-							 Carvão.<br>
-							 Lenha de jaboticabeira.<br></p>
+@media only screen and (min-width:577px){
+	@media only screen and (max-width: 768px){
+		#menu_suspenso{
+			display: block;
+			width: 6%;
+			cursor: pointer;
+			margin-bottom: -50px;
+		}
+	
+		#menu_superior a{
+			width:89%;
+			text-align: center;
+			margin-top: -5px;
+			margin-right: 5%;
+		}
+		
+		#menu_superior img{
+			margin-left:43%;
+		}
+		
+		#menu_superior{
+			width:100%;
+		}
+	
+		header{
+			position: absolute;
+			height: 230px;
+			width:100%;
+		}
+	
+		header img{
+			margin-left: 45%;
+			margin-bottom: 10px;
+		}
+	
+		.img_home{
+		position: relative;
+		padding-top: -120px;
+		width: 100%;
+		height: 650px;
+		background-image: url(Img/Img/barbecue-1239434_1280tablet.jpg);
+	
+		}
+	
+		.img_home img{
+			display: none;
+		}
+	
+		.texto{
+		padding-top: 500px;
+		font-size: 20px;
+		text-align: center;
+	
+		}
+	
+		#selos{
+		display:none;
+		}
+	
+		#dadoscardapio1, #dadoscardapio2, #dadoscardapio3 {
+		visibility: hidden;
+		}
+	
+		#dadoscardapio1{
+		width: 100%;
+		height: 1600px;
+		margin-top: -270px;
+		margin-left: -4%;
+		}
+	
+		#dadoscardapio2{
+		position: relative;
+		width: 100%;
+		height: 2200px;
+		margin-top: -650px;
+		margin-right: -4%;
+		clear: both;
+		}
+	
+		#dadoscardapio3{
+		position: relative;
+		width: 100%;
+		height: 1900px;
+		margin-top: -1050px;
+		margin-left: -4%;
+		}
+	
+		.Elipse{
+			margin-top: -10px;
+		}
+	
+		.img1_showhide{
+			position: relative;
+			width: 80%;
+			height: 180px;
+			margin-left: 10%;
+			margin-top: 20px;
+		}
+	
+		.img2_showhide{
+			position: relative;
+			width: 80%;
+			height: 180px;
+			margin-left: 10%;
+			margin-top: 20px;
+		}
+	
+		.p2{
+			position: relative;
+			margin-top: 10px;
+			margin-left: 3%;
+		}
+	
+		.p2-2{
+			margin-top: 2px;
+			margin-bottom: 2px;
+		}
+	
+		.p3-2{
+			margin-top: 2px;
+		}
+	
+		.p2-3{
+			margin-left: 3%;
+		}
+	
+		.p3{
+			position: relative;
+			display: block;
+		}
+	
+		.p3-2{
+			margin-top: -1px;
+		}
+	
+		
+		.p1-2{
+			position: relative;
+			margin-top: 10px;
+			display: block;
+		}
+	
+		.p1-3{
+			margin-left: 2%;
+		}
+	
+		.p4{
+			position: relative;
+			clear: left;
+			text-align: left;
+			margin-left: 2%;
+		}
+	
+		.p3-3{
+			margin-left: 3%;
+		}
+	
+		.camada_fechar{
+			position: absolute;
+			margin-right: 1%;
+			margin-top: 1px;
+			left: 90%;
+		}
+	
+		.opcoes1, .opcoes2, .opcoes2vege, .opcoes1completo{
+		width: 80%;
+		margin: auto;
+		margin-bottom: 30px;
+		height:auto;
+		
+		}
+	
+		.opcoes1{
+		margin-top: 15px;
+		height: 350px;
+		z-index: 2;
+		padding-bottom:-40px;
+		}
+	
+		.opcoes1 h2{
+			padding-top: 10px;
+		}
+		
+	
+		.opcoes1completo{
+		height:350px;
+		margin-bottom:40px;
+		padding-bottom:-20px;
+		margin-top:30px;
+		}
+	
+		
+		.opcoes1completo h2{
+			font-size:20px;
+			padding-top:10px;
+		}
+	
+		.opcoes2{
+		margin-top: -35px;
+		height: 300px;
+		margin-bottom: 50px;
+		padding-bottom:20px;
+		}
+		
+		.opcoes2 {
+			font-size:15px;
+			height:280px;
+		}
+	
+		.opcoes2vege{
+		position: relative;
+		margin-top: 50px;
+		height: 350px;
+		padding-bottom:20px;
+		}
+		
+		.opcoes2vege h2{
+			font-size:15px;
+		}
+	
+		.opcoes2ilus{
+		margin-top:-20px;
+		height:auto;
+		padding-bottom:10px;
+		height:350px;
+		margin:auto;
+		width:80%;
+		}
+		
+		.opcoes2ilus h2{
+			font-size:20px;
+		}
+	
+		.img1{
+		height: 250px;
+		margin-left:12%;
+		padding-bottom:-20px;
+		margin-top:30px;
+		}
+	
+		.img2{
+		height: 250px;
+		margin-right:-6%;
+		margin-top:20px;
+		}
+	
+		.img3{
+		margin-top: 10px;
+		height: 220px;
+		}
+	
+		.img4{
+		margin-top:2px;
+		height: 250px;
+		margin-bottom: 10px;
+		width:85%;
+		margin-left:3.4%;
+		}
+	
+		#cardapios, #cardapios2{
+		display: flex;
+		flex-direction: column;
+		margin-top: 50px;
+	
+		}
+	
+		#cardapios{
+			height:auto;
+		}
+		
+	
+		#cardapios2{
+		margin-top:0px;
+		height: 700px;
+		margin:auto;
+		width:100%;
+		
+		}
+	
+		.palavracardapios{
+			margin-top: -100px;	
+			margin-bottom: -50px;
+			width: 100%;
+		}
+	
+		.Elipsedados{
+			display: none;
+		}
+		
+		.palavracardapios h4{
+		margin-left:6%;
+		}
+		
+		.orcamentos h1{
+		width:80%;
+		margin-left:10%;
+		font-size:30px;
+		}
+	
+		main{
+			position:relative;
+			margin: auto;
+			width:100%;
+		}
+		
+		html{
+			width:100%;
+		}
+		
+		body{
+			width:100%;
+		}
+		
+		button{
+			width:60%;
+			margin-left:19.5%;
+			font-size:30px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		
+		.h2-1, .h2-2, .h2-3{
+			display: none;
+		}
+		
+		footer h3{
+			margin-left:45%;
+			font-size: 25px;
+		}
+		
+		.footimg2{
+			margin-left:-7%;
+		}
+		
+		.footp{
+			margin-left:38%;
+		}
+		
+		.telefone{
+			margin-left:40%;
+		}
+		
+		.footimg3{
+			clear:right;
+			position:relative;
+			width:7%;
+			margin-top:7%;
+			margin-right:61%;
+		}
+		
+		.footimg4{
+			clear:right;
+			position:relative;
+			margin-right:40%;
+			margin-top:-5%;
+			width:7%;
+		}
+		
+		.footimg5{
+			width:7%;
+			margin-right:20%;
+			clear:right;
+			margin-top:-39px;
+		}
+	
+		.TadeuFooter{
+			display: none;
+		}
+	}
+}
 
-							 <p class="p2">
-							 	<span class="bold">SALADAS:</span><br>
-								Palmito original.<br>
-								Alface(Crespa, Agrião,<br> Alface roxo).<br>
-								Tomate padrão e seco.<br>
-								Ovo de codorna.<br>
-								Champignon na mostarda.<br>
-								Cenoura ralada.<br>
-								Beterraba ralada.<br>
-								<br>
-								<span class="bold">TEMPEROS:</span><br>
-								Azeite.<br>
-								Sal.<br>
-								Limão.<br>
-								Molho de mostarda.<br>
-								<br>
-								<span class="bold">Frutas para mesa:</span><br>
-								Manga. <br>
-								Melão.<br>
-								Morango.<br>
-								Maçã.<br>
-								Pera.<br></p>
 
-								<p class="p3">
-								<span class="bold">ACOMPANHAMENTOS:</span><br>
-								Maionese.<br>
-								Farofa.<br>
-								Vinagrete.<br>
-								Arroz branco.<br>
-								<br>
-								<span class="bold">SOBREMESA:</span><br>
-								Abacaxi na brasa com<br>sorvete. 
-								<br>
-								<span class="bold">TALHERES E PRATOS:</span><br>
-								Pratos porcelana.<br>
-								Faca de inox.<br>
-								Garfo de inox.<br>
-								Copos de vidro.<br>
-								<br>
-
-								<span class="bold">OBS: Os alimentos ja vão<br>pré preparados, mas são<br>finalizados no dia.</span> </p>
-					</div>
-			</div>
-
-			<section class="opcoes1completo">
-				<img class="Elipse" src="Img/Img/Ellipse.png">
-				<h2>CARDÁPIO COMPLETO:</h2>
-				<img class="img2" src="Img/Img/tagliatadiv2.png" onclick ="show_cardapio2()">
-				<div id="dadoscardapio2">
-					<div class="camada_fechar"><a onclick="fechar()" >X</a></div>
-						<img class="Elipsedados" src="Img/Img/Ellipse.png">
-						<h3 id="dados2">CARDÁPIO COMPLETO:</h3>
-						<img class="img2_showhide" src="Img/Img/tagliatadiv2.png" >
-						<p class="p1-2">
-							<span class="bold">ENTRADAS:</span><br>
-							Lanche de pernil flambado<br> com queijo prato
-							e vinagrete.<br>
-							Pães com frios e queijos<br> temperados.<br>
-							<br>
-							<span class="bold">BEBIDAS:</span><br>
-							Vodka.<br>
-							Velho Barreiro.<br>
-							Saquê.<br>
-							Gim.<br>
-							Água tônica.<br>
-							51.<br>
-							Água com gás.<br>
-							Refrigeirantes.<br>
-							Água sem gás.<br>
-							<br>
-							<span class="bold">FRUTAS PARA DRINKS:</span><br>
-							Pitaya.<br>
-							Limão Siciliano e verde.<br>
-							Morango.<br>
-							Laranja.<br>
-							Uva.<br>
-							Maracujá.<br>
-							Melancia.<br>
-							<br>
-							</p>
-							<p class="p2-2">
-							<span class="bold">FRUTAS PARA A MESA:</span><br>
-							Morango.<br>
-							Maçã.<br>
-							Pera.<br>
-							Manga.<br>
-							Melão.<br>
-							<br>
-							<span class="bold">CARNES(em peças):</span><br>
-							Tagliata Italiana<br>
-							Linguiça perdigão na brasa.<br>
-							Salsichão.<br>
-							Fraldinha.<br>
-							Bife Ancho.<br>
-							Picanha suína .<br>
-							Tulipa de frango.<br>
-							Sobre-coxa de Frango.<br>
-							Pães de alho.<br>
-							Queijo qualho.<br>
-							<br>
-							<span class="bold">EQUIPAMENTOS DE PREPARO:</span><br>
-							Carvão.<br>
-							Lenha de jaboticabeira.<br>
-							<br>
-							<span class="bold">TEMPEROS:</span><br>
-							Azeite.<br>
-							Sal.<br>
-							Limão.<br>
-							Molho de mostarda.<br> </p>
-						<p class="p3-2">
-							<span class="bold">SALADAS:</span><br>
-							Palmito original.<br>
-							champion no molho<br> de mostarda.<br>
-							Ovos de codorna.<br>
-							Cenoura ralada.<br>
-							Beterraba ralada.<br>
-							Pepino fatiado.<br>
-							Alface (crespo, americano<br> roxo, agrião).<br>
-							Tomate padrão e seco.<br>
-							<br>
-							<span class="bold">EQUIPE:</span><br>
-							Churrasqueiro <br>      
-							Garçon.<br>
-							Copeira.<br>
-							Cozinheira.<br>
-							Bartender.<br><br>
-							<span class="bold">ACOMPANHAMENTOS:</span><br>
-							Farofa.<br>				
-							Maionese.<br>
-							Vinagrete.<br>
-							Arroz branco.<br>
-							Abobrinha na brasa.<br>
-							<br>	</p>
-
-						<p class="p4">
-							<span class="bold">CORTESIA:</span><br>
-							3 Rechaud de inox para<br> carnes, frangos, arroz<br>
-							e linguiças.<br>
-							<br>
-							<span class="bold">TALHERES E PRATOS:</span><br>
-							Pratos porcelana.<br>
-							Copos paulistinha.<br>
-							Garfos de inox.<br>
-							Facas de inox.<br>
-							<br>
-							<span class="bold">OBS: Os alimentos ja vão<br>pré preparados, mas são<br>finalizados no dia.</span>	
-						</p>
-				</div>
-			</div>
-		</section>
-		<div id="cardapios2">
-			<section class="opcoes2">
-				<img class="Elipse" src="Img/Img/Ellipse.png">
-				<h2>CARDÁPIO VEGETARIANO:</h2>
-				<img class="img3" src="Img/Img/vegetariano.jpg" onclick="show_cardapio3()">
-				<div id="dadoscardapio3">
-					<div class="camada_fechar"><a onclick="fechar()" >X</a></div>
-						<img class="Elipsedados" src="Img/Img/Ellipse.png">
-						<h3 id="dados3">CARDÁPIO VEGETARIANO:</h3>
-						<img class="img2_showhide" src="Img/Img/vegetariano.jpg">
-						<p class="p1-3">
-							<span class="bold">ENTRADAS:</span><br>
-							Grão secos refinados.<br>
-							Pães com frios e queijos temperados.<br>
-							<br>
-							<span class="bold">BEBIDAS:</span><br>
-							Por conta do cliente.<br>
-							<br>
-							<span class="bold">EQUIPE:</span><br>
-							Churrasqueiro.<br>
-							Garçon.<br>
-							Copeira.<br>
-							Cozinheira.<br>
-							<br>
-							<span class="bold">ASSADOS:</span><br>
-							Shimeji.<br>
-							Abobrinha.<br>
-							Beringela.<br>
-							Tomates rechedos.<br>
-							Couve-manteiga.<br>
-							<br>
-							<span class="bold">EQUIPAMENTOS DE PREPARO:</span><br>
-							Carvão.<br>
-							Lenha de jaboticabeira.<br> </p>
-
-							<p class="p2-3">
-								<span class="bold">SALADAS:</span><br>
-								Champion no molho de mostarda.<br>
-								Palmito original.
-								Alface (crespo,<br> agrião, alface roxo)<br>
-								Tomate padrão e seco.<br>
-								Ovo de codorna.<br>
-								Cenoura ralada.<br>
-								Beterraba ralada.<br>
-								Manga fatiada.<br>
-								<br>
-								<span class="bold">TEMPEROS:</span><br>
-								Azeite.<br>
-								Sal.<br>
-								Limão.<br>
-								Molho de mostarda.<br>
-								<br>
-								<span class="bold">FRUTAS PARA A MESA:</span><br>
-								Manga. <br>
-								Melão.<br>
-								Morango.<br>
-								Maçã.<br>
-								Pera.<br>
-								<br>
-                               <span class="bold">OBS: Os alimentos ja vão<br>pré preparados, mas são<br>finalizados no dia.</span></p>
-
-								<p class="p3-3">
-									<span class="bold">ACOMPANHAMENTOS:</span><br>
-									Maionese.<br>
-									Pimentão verde, <br>amarelo e vermelho.<br>
-									Milho.<br>
-									Azeitona.<br>
-									Salcinha.<br>
-									Ovos.<br>
-									Maçã verde.<br>
-									Limão.<br>
-									<br>
-									<span class="bold">FAROFA:</span><br>
-									Ricóta defumada.<br>
-									Castanha.<br>
-									Mix de farinhas.<br>
-									Arroz branco parboliza<br>do<br>
-									<br>
-									<span class="bold">SOBREMESA:</span><br>
-									Abacaxi na brasa<br> com sorvete de creme.<br>
-									<br>
-									<span class="bold">TALHERES E PRATOS:</span><br>
-									Pratos de porcelana.<br>
-									Copos paulistinha.<br>
-									Garfos de inox.<br>
-									Facas de inox.<br></p>
-				</div>
-			</section>
-			<div class="opcoes2ilus">
-				<img class="Elipse" src="Img/Img/Ellipse.png">
-				<h2>CARDÁPIO ILUSTRATIVO:<h2>
-			<img class="img4" src="Img/Img/tagliata.jpg">
-			</div>
-		</div>
-		<a name="orcamentos" id="orcamentos">
-		<div class="palavraorcamentos">FAÇA SEU ORÇAMENTO:</div></a>
-		<section class="orcamentos">
-			<h1>ORÇAMENTOS</h1>
-			<form action="https://formsubmit.co/patrickgonzales031@gmail.com" method="POST">
-			<p class="orcamentonome">Digite seu nome:</p>
-			<input type="text" name="Nome do Cliente:" required>
-			<p class="orcamentoemail">Digite seu e-mail:</p>
-			<input type="email" name="E-mail do Cliente:" >
-			<p class="orcamentotelefone">Digite seu telefone:</p>
-			<input type="tel" name="Telefone do Cliente:" required maxlength="11">
-			<p class="orcamentopessoas">Digite o número de pessoas:</p>
-			<input type="text" name="Número de Pessoas:" required>
-			<p class="orcamentocomentario">Quer comentar alguma coisa?</p>
-			<textarea id="coment" cols="20" rows="1%" name="Comentários:"></textarea>
-			<button type="submit">Enviar</button>
-			</form>
-		</section> 
-
-		<footer>
-			<a name="contatos" id="contatos">
-			<h3>Contatos:</h3></a>
-			<img class="telefone" src="Img/Img/telefoneTadeu.png">
-			<p class="footp">(11) 96618-6883</p>
-			<img class="footimg2" src="Img/Img/envelopetadeu.png">
-			<p class="p2">loren.ipsum@gmail.com </p>
-			<a href="#cardapio"><h2 class="h2-1">Cardápios</h2></a>
-			<a href="#"><h2 class="h2-2">Quem somos</h2></a>
-			<a href="#orcamento" class="h2-3"><h2>Faça seu orçamento</h2></a>
-			<a href="http://api.whatsapp.com/send?phone=5511966186883" target="_blank"><img class="footimg3" src="Img/Img/wpptadeu.png"></a>
-			<img class="footimg4" src="Img/Img/facebook.png" target="none">
-			<a href="https://www.instagram.com/tadeu_churras/" target="_blank"><img class="footimg5" src="Img/Img/instagram.png"></a>
-			<img class="TadeuFooter" src="Img/Img/TadeuRecortada 2.png">
-		</footer>
-
-	</main>
-
-</body>
-</html>
