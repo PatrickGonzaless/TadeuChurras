@@ -847,7 +847,22 @@ footer img{
 	width: 80%;
 }
 
+::-webkit-scrollbar {
+    width:8px;
+}
 
+::-webkit-scrollbar-track {
+    background-color: #887767;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #624191;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #887767;
+}
 
 @media only screen and (max-width: 576px){
 
