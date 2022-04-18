@@ -320,18 +320,18 @@
 		<div class="palavraorcamentos">FAÇA SEU ORÇAMENTO:</div></a>
 		<section class="orcamentos">
 			<h1>ORÇAMENTOS</h1>
-			<form>
+			<form action="https://formsubmit.co/patrickgonzales031@gmail.com" method="POST">
 			<p class="orcamentonome">Digite seu nome:</p>
-			<input type="text" name="nome">
+			<input type="text" name="name" required>
 			<p class="orcamentoemail">Digite seu e-mail:</p>
-			<input type="text" name="email">
+			<input type="email" name="email" >
 			<p class="orcamentotelefone">Digite seu telefone:</p>
-			<input type="tel" name="telefone">
+			<input type="tel" name="telefone" required maxlength="11">
 			<p class="orcamentopessoas">Digite o número de pessoas:</p>
-			<input type="text" name="local do evento">
+			<input type="text" name="local do evento" required>
 			<p class="orcamentocomentario">Quer comentar alguma coisa?</p>
 			<textarea id="coment" cols="20" rows="1%"></textarea>
-			<input id="button" type="button" value="Enviar"></input>
+			<button type="submit">Enviar</button>
 			</form>
 		</section> 
 
