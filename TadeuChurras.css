@@ -861,7 +861,7 @@ footer img{
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #46392C;
+    background-color: #30271F;
 }
 
 @media only screen and (max-width: 576px){
@@ -1475,7 +1475,7 @@ footer img{
 	
 		.img2{
 		height: 250px;
-		margin-right:0%;
+		margin-right:%;
 		margin-top:20px;
 		}
 	
