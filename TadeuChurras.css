@@ -876,7 +876,7 @@ footer img{
 	#menu_superior a{
 		width:89%;
 		text-align: center;
-		margin-top: -5px;
+		margin-top: 5px;
 		margin-right: 5%;
 	}
 	
@@ -890,7 +890,7 @@ footer img{
 
 	header{
 		position: absolute;
-		height: 230px;
+		height: 280px;
 		width:100%;
 	}
 
